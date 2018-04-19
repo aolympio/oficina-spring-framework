@@ -125,7 +125,7 @@
 									th:field="*{tipo}">
 									<option value="">Selecione o tipo</option>
 									<option th:each="tipo: ${tipos}"
-										th:value="${tipo}" th:text="#|tipoVinho.s{tipo}|"> Opção 1</option>
+										th:value="${tipo}" th:text="#{|tipoVinho.${tipo}|}">Opção 1</option>
 								</select>
 							</div>
 						</div>
@@ -135,7 +135,7 @@
 								<label for="valor">Valor</label>
 								
 								<input id="valor" type="text" class="form-control js-moeda" 
-									th:field="*{valor}/>
+									th:field="*{valor}" />
 							</div>
 						</div>
 					</div>
